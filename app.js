@@ -24,8 +24,14 @@ ajoutInput2.addEventListener("click", function () {
     ajoutInputDiv2.appendChild(createDiv);
     createDiv.appendChild(createInput);
     createDiv.appendChild(createSpan);
-})
+});
 
+//Calcul de l'épargne: Bouton permettant d'écrire la valeur de l'input dans le texte "total de l'épargne : "
+document.getElementById("totalSavings").addEventListener("click", function () {
+    let inputSavings = document.getElementById("savings").value;
+    document.getElementById("totalResultSavings").innerHTML += inputSavings + " €";
+    console.log(inputSavings);
+});
 
 
 

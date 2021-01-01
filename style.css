@@ -62,14 +62,15 @@ label{
     line-height: 21px;
 }
 
-#containerFixedExpenses, #containerCurrentExpenses, #containerOccasionalExpenses, #containerCalculRevenue, #containerCalculSavings{
+#containerFixedExpenses, #containerCurrentExpenses, #containerOccasionalExpenses, #containerCalculRevenue, #containerCalculSavings,
+#containerCalculExpense{
     width: 100%;
     display: flex;
     flex-direction: row;
 }
 
 #labelFixedExpenses, #labelCurrentExpenses, #labelOccasionalExpenses, #inputFixedExpenses, #inputCurrentExpenses, #inputOccasionalExpenses,
-#labelRevenue, #inputRevenue, #inputSavings, #divSavings{
+#labelRevenue, #inputRevenue, #inputSavings, #divSavings, #divExpense, #ajoutInputDiv{
     display: flex;
     flex-direction: column;
     width: 45%;
@@ -109,6 +110,6 @@ button{
     margin-top: 10px;
 }
 
-.ajoutInput{
+#ajoutInput1, #ajoutInput2{
     background-color: #FF9900;
 }

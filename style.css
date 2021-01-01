@@ -62,20 +62,20 @@ label{
     line-height: 21px;
 }
 
-#containerFixedExpenses, #containerCurrentExpenses, #containerOccasionalExpenses, #containerCalculRevenue{
+#containerFixedExpenses, #containerCurrentExpenses, #containerOccasionalExpenses, #containerCalculRevenue, #containerCalculSavings{
     width: 100%;
     display: flex;
     flex-direction: row;
 }
 
 #labelFixedExpenses, #labelCurrentExpenses, #labelOccasionalExpenses, #inputFixedExpenses, #inputCurrentExpenses, #inputOccasionalExpenses,
-#labelRevenue, #inputRevenue{
+#labelRevenue, #inputRevenue, #inputSavings, #divSavings{
     display: flex;
     flex-direction: column;
     width: 45%;
 }
 
-#totalResultExpenses, #totalResultRevenue{
+#totalResultExpenses, #totalResultRevenue, #totalResultSavings, #result{
     display: flex;
     flex-direction: row;
     color: red;
@@ -83,13 +83,25 @@ label{
     justify-content: center;
 }
 
-#totalExpenses, #totalSavings, #totalRevenue{
+#result{
+    color: green;
+}
+
+#totalExpenses, #totalSavings, #totalRevenue, #reset{
     background-color: red;
 }
 
+#reset{
+    margin-left: 520px;
+}
+
+#resultBudget{
+    background-color: green;
+}
+
 button{
-    font-size: 15px;
-    width: 7%;
+    font-size: 18px;
+    width: 9%;
     color: white;
     border-radius: 10px;
     margin-left: 490px;
@@ -98,5 +110,5 @@ button{
 }
 
 .ajoutInput{
-    background-color: #666666;
+    background-color: #FF9900;
 }

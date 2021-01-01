@@ -17,16 +17,16 @@
             <h3>Les dépenses fixes:</h3>
             <div id="containerFixedExpenses">
                 <div id="labelFixedExpenses">
-                    <label for="input1">Loyer et charges</label>
-                    <label for="input2">Remboursements de crédits</label>
-                    <label for="input3">Eau / électricité / gaz</label>
-                    <label for="input4"> Téléphone - internet</label>
-                    <label for="input5">Assurance habitation</label>
-                    <label for="input6">Assurance véhicules</label>
-                    <label for="input7">Mutuelle santé</label>
-                    <label for="input8">Frais de garde</label>
-                    <label for="input9">Impôts sur le revenu</label>
-                    <label for="input10">Impôts locaux</label>
+                    <label>Loyer et charges</label>
+                    <label>Remboursements de crédits</label>
+                    <label>Eau / électricité / gaz</label>
+                    <label> Téléphone - internet</label>
+                    <label>Assurance habitation</label>
+                    <label>Assurance véhicules</label>
+                    <label>Mutuelle santé</label>
+                    <label>Frais de garde</label>
+                    <label>Impôts sur le revenu</label>
+                    <label>Impôts locaux</label>
                 </div>
                 <div id="inputFixedExpenses">
                     <div>
@@ -74,9 +74,9 @@
             <h3>Les dépenses courantes:</h3>
             <div id="containerCurrentExpenses">
                 <div id="labelCurrentExpenses">
-                    <label for="input1">Courses</label>
-                    <label for="input2">Essences / frais de transport en commun</label>
-                    <label for="input3">Activités sportives et culturelles</label>
+                    <label>Courses</label>
+                    <label>Essences / frais de transport en commun</label>
+                    <label>Activités sportives et culturelles</label>
                 </div>
                 <div id="inputCurrentExpenses">
                     <div>
@@ -96,7 +96,7 @@
             <h3>Les dépenses occasionnelles:</h3>
             <div id="containerOccasionalExpenses">
                 <div id="labelOccasionalExpenses">
-                    <label for="input1">Sorties</label>
+                    <label>Sorties</label>
                 </div>
                 <div id="inputOccasionalExpenses">
                     <div>
@@ -114,9 +114,9 @@
             <h2>Calcul des recettes</h2>
             <div id="containerCalculRevenue">
                 <div id="labelRevenue">
-                    <label for="input1">Courses</label>
-                    <label for="input2">Essences / frais de transport en commun</label>
-                    <label for="input3">Activités sportives et culturelles</label>
+                    <label>Salaire</label>
+                    <label>Aides</label>
+                    <label>Rentes</label>
                 </div>
                 <div id="inputRevenue">
                     <div>
@@ -144,17 +144,25 @@
         </div>
         <div id="containerSavings">
             <h2>Calcul de l'épargne</h2>
-            <input type="text" class="savings">
+            <div id="containerCalculSavings">
+                <div id="divSavings">
+                </div >
+                <div id="inputSavings">
+                    <div >
+                        <input type="text" class="savings">
+                        <span>€</span>
+                    </div>
+                </div>
+            </div>
             <button id="totalSavings">Total</button>
-            <p>Total de l'épargne : </p>
-            <span>€</span>
+            <p id="totalResultSavings">Total de l'épargne : </p>
         </div>
         <div id="containerResult">
-            <h3>Résultat</h3>
-            <button> Résultat</button>
+            <h2>Résultat</h2>
+            <button id="resultBudget"> Résultat</button>
             <p id="result">Résultat : </p>
-            <span>€</span>
         </div>
+        <button id="reset">Réinitialiser</button>
     </main>
 
     <script src="app.js"></script>

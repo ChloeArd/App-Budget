@@ -63,14 +63,14 @@ label{
 }
 
 #containerFixedExpenses, #containerCurrentExpenses, #containerOccasionalExpenses, #containerCalculRevenue, #containerCalculSavings,
-#containerCalculExpense{
+#containerCalculExpense, #containerCalculRevenue2{
     width: 100%;
     display: flex;
     flex-direction: row;
 }
 
 #labelFixedExpenses, #labelCurrentExpenses, #labelOccasionalExpenses, #inputFixedExpenses, #inputCurrentExpenses, #inputOccasionalExpenses,
-#labelRevenue, #inputRevenue, #inputSavings, #divSavings, #divExpense, #ajoutInputDiv{
+#labelRevenue, #inputRevenue, #inputSavings, #divSavings, #divExpense, #ajoutInputDiv, #divRevenue, #ajoutInputDiv2{
     display: flex;
     flex-direction: column;
     width: 45%;

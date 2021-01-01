@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>App budget</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1> App Budget</h1>
+    </header>
+
+    <main>
+        <div id="ContainerExpense">
+            <h2> Calcul des dépenses</h2>
+            <h3>Les dépenses fixes:</h3>
+            <div id="containerFixedExpenses">
+                <div id="labelFixedExpenses">
+                    <label for="input1">Loyer et charges</label>
+                    <label for="input2">Remboursements de crédits</label>
+                    <label for="input3">Eau / électricité / gaz</label>
+                    <label for="input4"> Téléphone - internet</label>
+                    <label for="input5">Assurance habitation</label>
+                    <label for="input6">Assurance véhicules</label>
+                    <label for="input7">Mutuelle santé</label>
+                    <label for="input8">Frais de garde</label>
+                    <label for="input9">Impôts sur le revenu</label>
+                    <label for="input10">Impôts locaux</label>
+                </div>
+                <div id="inputFixedExpenses">
+                    <input type="text" class="Expenses"> <span>€</span>
+                    <input type="text" class="Expenses"> <span>€</span>
+                    <input type="text" class="Expenses"> <span>€</span>
+                    <input type="text" class="Expenses"> <span>€</span>
+                    <input type="text" class="Expenses"> <span>€</span>
+                    <input type="text" class="Expenses"> <span>€</span>
+                    <input type="text" class="Expenses"> <span>€</span>
+                    <input type="text" class="Expenses"> <span>€</span>
+                    <input type="text" class="Expenses"> <span>€</span>
+                    <input type="text" class="Expenses"> <span>€</span>
+                </div>
+            </div>
+            <h3>Les dépenses courantes:</h3>
+            <div id="containerCurrentExpenses">
+                <div id="labelCurrentExpenses">
+                    <label for="input1">Courses</label>
+                    <label for="input2">Essences / frais de transport en commun</label>
+                    <label for="input3">Activités sportives et culturelles</label>
+                </div>
+                <div id="inputCurrentExpenses">
+                    <input type="text" class="Expenses"> <span>€</span>
+                    <input type="text" class="Expenses"> <span>€</span>
+                    <input type="text" class="Expenses"> <span>€</span>
+                </div>
+            </div>
+            <h3>Les dépenses occasionnelles:</h3>
+            <div id="containerOccasionalExpenses">
+                <div id="labelOccasionalExpenses">
+                    <label for="input1">Courses</label>
+                    <label for="input2">Essences / frais de transport en commun</label>
+                    <label for="input3">Activités sportives et culturelles</label>
+                </div>
+                <div id="inputOccasionalExpenses">
+                    <input type="text" class="Expenses"> <span>€</span>
+                </div>
+            </div>
+            <h3>Les autres dépenses:</h3>
+            <button id="ajoutInput">+</button>
+            <button id="totalExpenses">Total</button>
+            <p>Total des dépenses : </p>
+            <span>€</span>
+        </div>
+        <div id="ContainerRevenue">
+
+        </div>
+        <div id="ContainerSavings">
+
+        </div>
+        <div id="ContainerResult">
+
+        </div>
+    </main>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

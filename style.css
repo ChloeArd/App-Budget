@@ -62,19 +62,20 @@ label{
     line-height: 21px;
 }
 
-#containerFixedExpenses, #containerCurrentExpenses, #containerOccasionalExpenses{
+#containerFixedExpenses, #containerCurrentExpenses, #containerOccasionalExpenses, #containerCalculRevenue{
     width: 100%;
     display: flex;
     flex-direction: row;
 }
 
-#labelFixedExpenses, #labelCurrentExpenses, #labelOccasionalExpenses, #inputFixedExpenses, #inputCurrentExpenses, #inputOccasionalExpenses{
+#labelFixedExpenses, #labelCurrentExpenses, #labelOccasionalExpenses, #inputFixedExpenses, #inputCurrentExpenses, #inputOccasionalExpenses,
+#labelRevenue, #inputRevenue{
     display: flex;
     flex-direction: column;
     width: 45%;
 }
 
-#totalResultExpenses{
+#totalResultExpenses, #totalResultRevenue{
     display: flex;
     flex-direction: row;
     color: red;
@@ -82,7 +83,7 @@ label{
     justify-content: center;
 }
 
-#totalExpenses{
+#totalExpenses, #totalSavings, #totalRevenue{
     background-color: red;
 }
 

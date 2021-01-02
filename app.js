@@ -97,7 +97,12 @@ document.getElementById("resultBudget").addEventListener("click", function () {
         ajoutTextBudget("Ton budget est nul !", "grey");
     }
     if (result > 0){
-        ajoutTextBudget("Ton budget est positif !", "green")
+        ajoutTextBudget("Ton budget est positif !", "green");
+        let createText2 = document.createElement("p");
+        createText2.innerHTML = "Vous pouvez avec votre budget restant faire un don a une association de votre choix, ca serait une bonne action ! ;)";
+        createText2.style.color = "blue";
+        createText2.id = "createText2";
+        document.getElementById("containerResult").appendChild(createText2);
     }
     function ajoutTextBudget(text, color){
         let createText = document.createElement("p");

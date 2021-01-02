@@ -76,7 +76,7 @@ label{
     width: 45%;
 }
 
-#totalResultExpenses, #totalResultRevenue, #totalResultSavings, #result, #createText{
+#totalResultExpenses, #totalResultRevenue, #totalResultSavings, #result, #createText, #createText2{
     display: flex;
     flex-direction: row;
     color: red;

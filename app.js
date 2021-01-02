@@ -102,6 +102,7 @@ document.getElementById("resultBudget").addEventListener("click", function () {
         createText2.innerHTML = "Vous pouvez avec votre budget restant faire un don a une association de votre choix, ca serait une bonne action ! ;)";
         createText2.style.color = "blue";
         createText2.id = "createText2";
+        createText2.style.fontSize = 15 + "px";
         document.getElementById("containerResult").appendChild(createText2);
     }
     function ajoutTextBudget(text, color){

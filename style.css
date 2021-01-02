@@ -76,7 +76,7 @@ label{
     width: 45%;
 }
 
-#totalResultExpenses, #totalResultRevenue, #totalResultSavings, #result{
+#totalResultExpenses, #totalResultRevenue, #totalResultSavings, #result, #createText{
     display: flex;
     flex-direction: row;
     color: red;
@@ -85,7 +85,7 @@ label{
 }
 
 #result{
-    color: green;
+    color: #FF9900;
 }
 
 #totalExpenses, #totalSavings, #totalRevenue, #reset{

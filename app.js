@@ -91,21 +91,19 @@ document.getElementById("resultBudget").addEventListener("click", function () {
     let result = (parseFloat(resultTotalRevenue) - parseFloat(inputSavings) - parseFloat(resultTotalExpenses));
     document.getElementById("result").innerHTML += result + " € ";
     if (result < 0){
-        let createText = document.createElement("p");
-        createText.innerHTML = "Attention, ton budget est négatif !";
-        createText.style.color = "red";
-        document.getElementById("containerResult").appendChild(createText);
+        ajoutTextBudget("Attention, ton budget est négatif !", "red");
     }
     if (result === 0){
-        let createText = document.createElement("p");
-        createText.innerHTML = "Ton budget est nul !";
-        createText.style.color = "grey";
-        document.getElementById("containerResult").appendChild(createText);
+        ajoutTextBudget("Ton budget est nul !", "grey");
     }
     if (result > 0){
+        ajoutTextBudget("Ton budget est positif !", "green")
+    }
+    function ajoutTextBudget(text, color){
         let createText = document.createElement("p");
-        createText.innerHTML = "Ton budget est positif !";
-        createText.style.color = "green";
+        createText.innerHTML = text;
+        createText.style.color = color;
+        createText.id = "createText";
         document.getElementById("containerResult").appendChild(createText);
     }
 });

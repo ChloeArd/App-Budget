@@ -30,17 +30,33 @@ ajoutInput2.addEventListener("click", function () {
 document.getElementById("totalExpenses").addEventListener("click", function () {
     let inputExpenses = document.getElementsByClassName("expenses");
     for (let i = 0; i <= inputExpenses.length; i++){
-        let resultExpenses = inputExpenses.item(i).value;
-        console.log(inputExpenses + "aaaaaaaaa " + i);
-        resultExpenses.innerHTML += inputExpenses;
+        let resultExpenses1 = inputExpenses.item(i).value;
+        let resultExpenses2 = inputExpenses.item(i).value;
+        if ((i % 2 ) === 0){
+            console.log(("impaire" + resultExpenses1));
+            resultExpenses1 = inputExpenses.item(i).value;
+
+        }
+        if ((i % 2) === 1){
+            console.log("paire" + resultExpenses2);
+            resultExpenses2 = inputExpenses.item(i).value;
+        }
+        let resultTotalExpenses = 0;
+        resultTotalExpenses = parseFloat(resultExpenses1) + parseFloat(resultExpenses2);
+        document.getElementById("totalResultExpenses").innerHTML += resultTotalExpenses;
     }
 });
 
 //Calcul de l'épargne: Bouton permettant d'écrire la valeur de l'input dans le texte "total de l'épargne : "
+let inputSavings;
 document.getElementById("totalSavings").addEventListener("click", function () {
-    let inputSavings = document.getElementById("savings").value;
+    inputSavings = document.getElementById("savings").value;
     document.getElementById("totalResultSavings").innerHTML += inputSavings + " €";
-    console.log(inputSavings);
+});
+
+//Calcul du budget: Bouton permettant d'écrire la valeur de tous les input dans "Résultat : "
+document.getElementById("resultBudget").addEventListener("click", function () {
+    document.getElementById("result").innerHTML += inputSavings + " €";
 });
 
 

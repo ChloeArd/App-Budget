@@ -1,30 +1,27 @@
 let ajoutInput1 = document.getElementById("ajoutInput1");
-let ajoutInputDiv = document.getElementById("ajoutInputDiv");
-//Ajoute un input au calcul des dépenses
+//Ajoute un input au calcul des dépenses lors du click sur le bouton "+"
 ajoutInput1.addEventListener("click", function () {
-    let createDiv = document.createElement("div");
-    let createInput = document.createElement("input");
-    let createSpan = document.createElement("span");
-    createInput.className = "expenses";
-    createSpan.innerHTML = "€";
-    ajoutInputDiv.appendChild(createDiv);
-    createDiv.appendChild(createInput);
-    createDiv.appendChild(createSpan);
+    ajoutInput("expenses", "ajoutInputDiv")
 });
 
 let ajoutInput2 = document.getElementById("ajoutInput2");
-let ajoutInputDiv2 = document.getElementById("ajoutInputDiv2");
-//Ajoute un input au calcule des recettes
+//Ajoute un input au calcule des recettes lors du click sur le bouton "+"
 ajoutInput2.addEventListener("click", function () {
+    ajoutInput("revenue", "ajoutInputDiv2");
+});
+
+//Ajoute un input
+function ajoutInput(className, id) {
     let createDiv = document.createElement("div");
     let createInput = document.createElement("input");
     let createSpan = document.createElement("span");
-    createInput.className = "revenue";
+    createInput.className = className;
+    createInput.value = 0;
     createSpan.innerHTML = "€";
-    ajoutInputDiv2.appendChild(createDiv);
+    document.getElementById(id).appendChild(createDiv);
     createDiv.appendChild(createInput);
     createDiv.appendChild(createSpan);
-});
+}
 
 /**
 //Calcul des dépenses: Bouton permettant d'écrire la valeur des input additionne dans le texte "total des dépenses: "
@@ -105,15 +102,15 @@ document.getElementById("resultBudget").addEventListener("click", function () {
         createText2.style.fontSize = 15 + "px";
         document.getElementById("containerResult").appendChild(createText2);
     }
-    function ajoutTextBudget(text, color){
-        let createText = document.createElement("p");
-        createText.innerHTML = text;
-        createText.style.color = color;
-        createText.id = "createText";
-        document.getElementById("containerResult").appendChild(createText);
-    }
-
 });
+
+function ajoutTextBudget(text, color){
+    let createText = document.createElement("p");
+    createText.innerHTML = text;
+    createText.style.color = color;
+    createText.id = "createText";
+    document.getElementById("containerResult").appendChild(createText);
+}
 
 //Bouton reset des champs (input)
 document.getElementById("reset").addEventListener("click", function (){

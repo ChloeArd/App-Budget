@@ -1,12 +1,10 @@
-let ajoutInput1 = document.getElementById("ajoutInput1");
 //Ajoute un input au calcul des dépenses lors du click sur le bouton "+"
-ajoutInput1.addEventListener("click", function () {
+document.getElementById("ajoutInput1").addEventListener("click", function () {
     ajoutInput("expenses", "ajoutInputDiv")
 });
 
-let ajoutInput2 = document.getElementById("ajoutInput2");
 //Ajoute un input au calcule des recettes lors du click sur le bouton "+"
-ajoutInput2.addEventListener("click", function () {
+document.getElementById("ajoutInput2").addEventListener("click", function () {
     ajoutInput("revenue", "ajoutInputDiv2");
 });
 
@@ -23,27 +21,7 @@ function ajoutInput(className, id) {
     createDiv.appendChild(createSpan);
 }
 
-/**
 //Calcul des dépenses: Bouton permettant d'écrire la valeur des input additionne dans le texte "total des dépenses: "
-document.getElementById("totalExpenses").addEventListener("click", function () {
-    let inputExpenses = document.getElementsByClassName("expenses");
-    for (let i = 0; i <= inputExpenses.length; i++){
-        let resultExpenses1 = inputExpenses.item(i).value;
-        let resultExpenses2 = inputExpenses.item(i).value;
-        if ((i % 2 ) === 0){
-            console.log(("impaire" + resultExpenses1));
-            resultExpenses1 = inputExpenses.item(i).value;
-        }
-        if ((i % 2) === 1){
-            console.log("paire" + resultExpenses2);
-            resultExpenses2 = inputExpenses.item(i).value;
-        }
-        let resultTotalExpenses = 0;
-        resultTotalExpenses = parseFloat(resultExpenses1) + parseFloat(resultExpenses2);
-        document.getElementById("totalResultExpenses").innerHTML += resultTotalExpenses;
-    }
-});
- */
 let resultTotalExpenses;
 document.getElementById("totalExpenses").addEventListener("click", function () {
     let inputExpenses1 = document.getElementById("expenses1").value;
@@ -114,14 +92,14 @@ function ajoutTextBudget(text, color){
 
 //Bouton reset des champs (input)
 document.getElementById("reset").addEventListener("click", function (){
-    let input = document.getElementsByTagName("input");
-    for (let i = 0; i <= input.length; i++){
-        input.item(i).value = 0;
-    }
+    inputZero();
 });
 
 //Faire que tous les input valent zero au départ.
-let inputAll = document.getElementsByTagName("input");
-for (let i = 0; i <= inputAll.length; i++){
-    inputAll.item(i).value = 0;
+function inputZero() {
+    let inputAll = document.getElementsByTagName("input");
+    for (let i = 0; i <= inputAll.length; i++){
+        inputAll.item(i).value = 0;
+    }
 }
+inputZero();

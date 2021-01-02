@@ -38,7 +38,7 @@ document.getElementById("totalExpenses").addEventListener("click", function () {
     let inputExpenses12 = document.getElementById("expenses12").value;
     let inputExpenses13 = document.getElementById("expenses13").value;
     let inputExpenses14 = document.getElementById("expenses14").value;
-    resultTotalExpenses = (parseFloat(inputExpenses1) + parseFloat(inputExpenses2) + parseFloat(inputExpenses3) + parseFloat(inputExpenses4) + parseFloat(inputExpenses5) + parseFloat(inputExpenses6) + parseFloat(inputExpenses7) + parseFloat(inputExpenses8) + parseFloat(inputExpenses9) + parseFloat(inputExpenses10) + parseFloat(inputExpenses11) + parseFloat(inputExpenses12) + parseFloat(inputExpenses13) + parseFloat(inputExpenses14) + parseFloat(inputExpenses15));
+    resultTotalExpenses = (parseFloat(inputExpenses1) + parseFloat(inputExpenses2) + parseFloat(inputExpenses3) + parseFloat(inputExpenses4) + parseFloat(inputExpenses5) + parseFloat(inputExpenses6) + parseFloat(inputExpenses7) + parseFloat(inputExpenses8) + parseFloat(inputExpenses9) + parseFloat(inputExpenses10) + parseFloat(inputExpenses11) + parseFloat(inputExpenses12) + parseFloat(inputExpenses13) + parseFloat(inputExpenses14));
     document.getElementById("totalResultExpenses").innerHTML += "- " + resultTotalExpenses + " € ";
 //Faire que les input ajouter soit dans le calcul
 });

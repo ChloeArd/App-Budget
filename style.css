@@ -69,6 +69,10 @@ label{
     flex-direction: row;
 }
 
+#containerCalculRevenue{
+    margin-top: 10px;
+}
+
 #labelFixedExpenses, #labelCurrentExpenses, #labelOccasionalExpenses, #inputFixedExpenses, #inputCurrentExpenses, #inputOccasionalExpenses,
 #labelRevenue, #inputRevenue, #inputSavings, #divSavings, #divExpense, #ajoutInputDiv, #divRevenue, #ajoutInputDiv2{
     display: flex;

@@ -1,22 +1,22 @@
 //Ajoute un input au calcul des dépenses lors du click sur le bouton "+"
 document.getElementById("ajoutInput1").addEventListener("click", function () {
-    ajoutInput("expenses", "ajoutInputDiv")
+    ajoutInput("expenses15", "ajoutInputDiv")
 });
 
 //Ajoute un input au calcule des recettes lors du click sur le bouton "+"
 document.getElementById("ajoutInput2").addEventListener("click", function () {
-    ajoutInput("revenue", "ajoutInputDiv2");
+    ajoutInput("revenue15", "ajoutInputDiv2");
 });
 
 //Ajoute un input
-function ajoutInput(className, id) {
+function ajoutInput(id, idDoc) {
     let createDiv = document.createElement("div");
     let createInput = document.createElement("input");
     let createSpan = document.createElement("span");
-    createInput.className = className;
+    createInput.id = id;
     createInput.value = 0;
     createSpan.innerHTML = "€";
-    document.getElementById(id).appendChild(createDiv);
+    document.getElementById(idDoc).appendChild(createDiv);
     createDiv.appendChild(createInput);
     createDiv.appendChild(createSpan);
 }
@@ -38,7 +38,7 @@ document.getElementById("totalExpenses").addEventListener("click", function () {
     let inputExpenses12 = document.getElementById("expenses12").value;
     let inputExpenses13 = document.getElementById("expenses13").value;
     let inputExpenses14 = document.getElementById("expenses14").value;
-    resultTotalExpenses = (parseFloat(inputExpenses1) + parseFloat(inputExpenses2) + parseFloat(inputExpenses3) + parseFloat(inputExpenses4) + parseFloat(inputExpenses5) + parseFloat(inputExpenses6) + parseFloat(inputExpenses7) + parseFloat(inputExpenses8) + parseFloat(inputExpenses9) + parseFloat(inputExpenses10) + parseFloat(inputExpenses11) + parseFloat(inputExpenses12) + parseFloat(inputExpenses13) + parseFloat(inputExpenses14));
+    resultTotalExpenses = (parseFloat(inputExpenses1) + parseFloat(inputExpenses2) + parseFloat(inputExpenses3) + parseFloat(inputExpenses4) + parseFloat(inputExpenses5) + parseFloat(inputExpenses6) + parseFloat(inputExpenses7) + parseFloat(inputExpenses8) + parseFloat(inputExpenses9) + parseFloat(inputExpenses10) + parseFloat(inputExpenses11) + parseFloat(inputExpenses12) + parseFloat(inputExpenses13) + parseFloat(inputExpenses14) + parseFloat(inputExpenses15));
     document.getElementById("totalResultExpenses").innerHTML += "- " + resultTotalExpenses + " € ";
 //Faire que les input ajouter soit dans le calcul
 });

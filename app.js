@@ -112,12 +112,19 @@ document.getElementById("resultBudget").addEventListener("click", function () {
         createText.id = "createText";
         document.getElementById("containerResult").appendChild(createText);
     }
+
 });
 
 //Bouton reset des champs (input)
 document.getElementById("reset").addEventListener("click", function (){
     let input = document.getElementsByTagName("input");
     for (let i = 0; i <= input.length; i++){
-        input.item(i).value = " ";
+        input.item(i).value = 0;
     }
 });
+
+//Faire que tous les input valent zero au départ.
+let inputAll = document.getElementsByTagName("input");
+for (let i = 0; i <= inputAll.length; i++){
+    inputAll.item(i).value = 0;
+}

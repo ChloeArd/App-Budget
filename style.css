@@ -96,10 +96,6 @@ label{
     background-color: red;
 }
 
-#reset{
-    margin-left: 520px;
-}
-
 #resultBudget{
     background-color: green;
 }
@@ -109,9 +105,14 @@ button{
     width: 9%;
     color: white;
     border-radius: 10px;
-    margin-left: 490px;
+    margin: auto;
     margin-bottom: 10px;
     margin-top: 10px;
+}
+
+#reset{
+    display: flex;
+    justify-content: center;
 }
 
 #ajoutInput1, #ajoutInput2{

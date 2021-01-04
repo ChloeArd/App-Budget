@@ -92,6 +92,10 @@ function ajoutTextBudget(text, color){
 
 //Bouton reset des champs (input)
 document.getElementById("reset").addEventListener("click", function (){
+    document.getElementById("totalResultExpenses").innerHTML = "Total des dépenses : ";
+    document.getElementById("totalResultRevenue").innerHTML = "Total des recettes : ";
+    document.getElementById("totalResultSavings").innerHTML = "Total de l'épargne : ";
+    document.getElementById("result").innerHTML = "Résultat : ";
     inputZero();
 });
 

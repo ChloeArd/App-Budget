@@ -61,9 +61,10 @@ document.getElementById("totalSavings").addEventListener("click", function () {
     document.getElementById("totalResultSavings").innerHTML += inputSavings + " € ";
 });
 
+let result;
 //Calcul du budget: Bouton permettant d'écrire la valeur de tous les input dans "Résultat : "
 document.getElementById("resultBudget").addEventListener("click", function () {
-    let result = (parseFloat(resultTotalRevenue) - parseFloat(inputSavings) - parseFloat(resultTotalExpenses));
+    result = (parseFloat(resultTotalRevenue) - parseFloat(inputSavings) - parseFloat(resultTotalExpenses));
     document.getElementById("result").innerHTML += result.toFixed(2) + " € ";
     if (result < 0){
         ajoutTextBudget("Attention, ton budget est négatif !", "red");
@@ -97,7 +98,12 @@ document.getElementById("reset").addEventListener("click", function (){
     document.getElementById("totalResultSavings").innerHTML = "Total de l'épargne : ";
     document.getElementById("result").innerHTML = "Résultat : ";
     document.getElementById("createText").innerHTML = " ";
-    document.getElementById("createText2").innerHTML = " ";
+
+    if (result > 0){
+        document.getElementById("createText2").innerHTML = " ";
+        document.getElementById("createText").innerHTML = " ";
+    }
+
     inputZero();
 });
 

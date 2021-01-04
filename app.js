@@ -64,7 +64,7 @@ document.getElementById("totalSavings").addEventListener("click", function () {
 //Calcul du budget: Bouton permettant d'écrire la valeur de tous les input dans "Résultat : "
 document.getElementById("resultBudget").addEventListener("click", function () {
     let result = (parseFloat(resultTotalRevenue) - parseFloat(inputSavings) - parseFloat(resultTotalExpenses));
-    document.getElementById("result").innerHTML += result + " € ";
+    document.getElementById("result").innerHTML += result.toFixed(2) + " € ";
     if (result < 0){
         ajoutTextBudget("Attention, ton budget est négatif !", "red");
     }
@@ -73,7 +73,7 @@ document.getElementById("resultBudget").addEventListener("click", function () {
     }
     if (result > 0){
         ajoutTextBudget("Ton budget est positif !", "green");
-        let createText2 = document.createElement("p");
+        createText2 = document.createElement("p");
         createText2.innerHTML = "Vous pouvez avec votre budget restant faire un don a une association de votre choix, ca serait une bonne action ! ;)";
         createText2.style.color = "blue";
         createText2.id = "createText2";
